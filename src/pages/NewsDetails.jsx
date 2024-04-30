@@ -6,7 +6,7 @@ function NewsDetails() {
   const [news, setNews] = useState(null);
 
   useEffect(() => {
-    fetch(`https://example.com/api/news/${id}`)
+    fetch(`/api/news/${id}`)
       .then(response => response.json())
       .then(data => setNews(data))
       .catch(error => console.error('Error fetching news:', error));
